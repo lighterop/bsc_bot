@@ -22,5 +22,6 @@
 ### 1. 克隆项目
 
 ```bash
-git clone [https://github.com/你的用户名/bsc-wallet-monitor-bot.git](https://github.com/你的用户名/bsc-wallet-monitor-bot.git)
+git clone 
 cd bsc-wallet-monitor-bot
+

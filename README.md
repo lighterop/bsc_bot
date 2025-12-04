@@ -43,7 +43,7 @@ npm install pm2 -g
 TELEGRAM_BOT_TOKEN=你的_TELEGRAM_BOT_TOKEN
 
 # BSC RPC 节点地址 (建议使用 QuickNode/Alchemy 等私有节点以防断连，也可使用公共节点)
-BSC_RPC_URL=[https://bsc-dataseed.binance.org/](https://bsc-dataseed.binance.org/)
+BSC_RPC_URL=https://bsc-dataseed.binance.org
 ```
 
 ---
@@ -82,6 +82,7 @@ pm2 start bsc_bot.js --cron "0 2 * * *"
 ## ⚠️ 免责声明
 
 本项目仅供学习和个人使用。请勿用于非法用途。开发者不对因使用本软件产生的任何资产损失负责。
+
 
 
 

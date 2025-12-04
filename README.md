@@ -22,6 +22,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone 
+git clone https://github.com/lighterop/bsc_bot.git
 cd bsc-wallet-monitor-bot
+
 

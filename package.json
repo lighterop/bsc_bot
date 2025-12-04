@@ -1,0 +1,23 @@
+{
+  "name": "bsc-wallet-monitor-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot to monitor personal BSC wallet transactions (BNB & Tokens).",
+  "main": "bsc_bot.js",
+  "scripts": {
+    "start": "node bsc_bot.js"
+  },
+  "keywords": [
+    "bsc",
+    "telegram",
+    "bot",
+    "crypto",
+    "tracker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}

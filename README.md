@@ -47,9 +47,11 @@ BSC_RPC_URL=[https://bsc-dataseed.binance.org/](https://bsc-dataseed.binance.org
 
 ---
 ### 4. 启动机器人
-定时重启(凌晨2点)
 ```bash
-pm2 start bsc_bot.js --cron "0 2 * * *"
+pm2 start bsc_bot.js
+
+# 定时重启(凌晨2点)
+pm2 start bsc_bot.js --cron "0 2 * * *" 
 ```
 
 ---
@@ -82,6 +84,7 @@ pm2 start bsc_bot.js --cron "0 2 * * *"
 ## ⚠️ 免责声明
 
 本项目仅供学习和个人使用。请勿用于非法用途。开发者不对因使用本软件产生的任何资产损失负责。
+
 
 
 

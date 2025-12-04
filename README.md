@@ -24,5 +24,59 @@
 ```bash
 git clone https://github.com/lighterop/bsc_bot.git
 cd bsc-wallet-monitor-bot
+```
+
+---
+
+### 2. 安装依赖
+```bash
+npm install
+npm install pm2 -g
+```
+
+---
+### 3. 配置环境变量
+复制 .env.example 文件（如果没有，请手动创建 .env 文件），并填入你的配置：
+```bash
+# Telegram 机器人 Token (从 @BotFather 获取)
+TELEGRAM_BOT_TOKEN=你的_TELEGRAM_BOT_TOKEN
+
+# BSC RPC 节点地址 (建议使用 QuickNode/Alchemy 等私有节点以防断连，也可使用公共节点)
+BSC_RPC_URL=[https://bsc-dataseed.binance.org/](https://bsc-dataseed.binance.org/)
+```
+
+---
+### 4. 启动机器人
+定时重启(凌晨2点)
+```bash
+pm2 start bsc_bot.js --cron "0 2 * * *"
+```
+
+---
+## 📖 使用指南
+在 Telegram 中向机器人发送 /start 即可开始使用。
+
+
+| 指令 | 说明 | 示例 |
+| :----:| :----: | :----: |
+| `/watch [地址] [备注]`| 添加监控钱包（支持备注） | `/watch 0x123...abc 主钱包` |
+| `/unwatch [地址]` | 移除监控钱包 | `/unwatch 0x123...abc` |
+| `/list`     | 查看当前监控列表     |  `/list`   |
+| `/addtoken [合约]`      |  添加自定义代币监控      |  `/addtoken 0x...`  |
+---
+
+## 🤝 贡献
+欢迎提交 Issue 或 Pull Request 来改进这个项目！
+
+---
+## 📸 截图示例
+
+
+
+
+
+
+
+
 
 

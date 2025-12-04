@@ -23,7 +23,7 @@
 
 ```bash
 git clone https://github.com/lighterop/bsc_bot.git
-cd bsc-wallet-monitor-bot
+cd bsc_bot
 ```
 
 ---
@@ -82,6 +82,7 @@ pm2 start bsc_bot.js --cron "0 2 * * *"
 ## ⚠️ 免责声明
 
 本项目仅供学习和个人使用。请勿用于非法用途。开发者不对因使用本软件产生的任何资产损失负责。
+
 
 
 
